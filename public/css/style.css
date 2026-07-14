@@ -1,0 +1,67 @@
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  background: linear-gradient(180deg, #eef2ff 0%, #dbeafe 45%, #f8fafc 100%);
+  color: #0f172a;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img,
+iframe {
+  display: block;
+  width: 100%;
+}
+
+.hero img {
+  filter: none;
+}
+
+.hero-overlay {
+  background: rgba(15, 23, 42, 0.18);
+}
+
+.nav-links.open {
+  display: block !important;
+}
+
+.menu-toggle {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.map-frame {
+  min-height: 320px;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

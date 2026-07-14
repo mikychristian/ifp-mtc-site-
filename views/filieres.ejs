@@ -1,0 +1,72 @@
+<%- include('partials/header', { title, currentPage: 'filieres' }) %>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <h1>Découvrez nos filières d’excellence</h1>
+      <p>Des parcours professionnels modernes, pratiques et orientés emploi pour préparer chaque apprenant à réussir.</p>
+      <div class="tabs">
+        <a class="active" href="#techniques">Filières techniques</a>
+        <a href="#hotellerie">Filières hôtelières</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="techniques">
+    <div class="container">
+      <h2 class="section-title">Filières techniques</h2>
+      <p class="section-lead">Des formations pratiques pour construire une carrière solide dans les métiers du bâtiment, de l’énergie et de la technologie.</p>
+      <div class="program-grid">
+        <div class="program-card">
+          <img src="/images/technicien.jpg" alt="Filières techniques" />
+          <div class="content">
+            <h3>Compétences techniques</h3>
+            <p>Électricité, froid, fabrication, géomètre, énergie solaire, plomberie et maintenance.</p>
+            <div class="tag-list">
+              <span>Électricité</span><span>Froid</span><span>Fabrication</span><span>Plomberie</span>
+            </div>
+          </div>
+        </div>
+        <div class="program-card">
+          <div class="content">
+            <h3>Autres domaines</h3>
+            <p>Marketing digital, programmation, infographie, secrétariat et DAO.</p>
+            <div class="tag-list">
+              <span>Programmation</span><span>Marketing digital</span><span>Infographie</span><span>DAO</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="hotellerie">
+    <div class="container">
+      <h2 class="section-title">Filières hôtelières</h2>
+      <p class="section-lead">Des formations dédiées à la cuisine, à l’hôtellerie, au traiteur et à la gestion professionnelle de qualité.</p>
+      <div class="program-grid">
+        <div class="program-card">
+          <img src="/images/chefs.jpg" alt="Filières hôtelières" />
+          <div class="content">
+            <h3>Arts culinaires et service</h3>
+            <p>Cuisine, boulangerie, hébergement, service traiteur et cuisine internationale.</p>
+            <div class="tag-list">
+              <span>Cuisine</span><span>Boulangerie</span><span>Hébergement</span><span>Traiteur</span>
+            </div>
+          </div>
+        </div>
+        <div class="program-card">
+          <div class="content">
+            <h3>Excellence professionnelle</h3>
+            <p>Un encadrement pratique, un environnement dynamique et des compétences reconnues.</p>
+            <div class="tag-list">
+              <span>Gestion hôtelière</span><span>Accueil</span><span>Service</span><span>Qualité</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%- include('partials/footer') %>
